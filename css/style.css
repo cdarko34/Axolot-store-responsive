@@ -708,94 +708,23 @@ select{
 	}
 }		
 
-/*=============== LOG IN ===============*/
+	/*=============== LOG IN ===============*/
 
-#login-wrapper{
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: repeat(6, auto);
-	grid-template-areas: 
-	"vnav" 
-	"login"
-	"divider" 
-	"signup"
-	"news" 
-	"footer";
+#divider-border{
+	border-bottom: .1em solid #A3ADF5;
 }
 
-
-	#login-wrapper form{
-		display: flex;
-		flex-flow: wrap column;
-	}
-
-#divider{
-	height: 1vh;
-	border-bottom: solid .2em #8093F1;
-	margin: 0 3em;
-}
-
-#login{
-	grid-area: login;
-	display: flex;
-	flex-flow: wrap column;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
-	padding: 5em 0;	
-}
-
-
-#signup{
-	grid-area: signup;
-	display: flex;
-	flex-flow: wrap column;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
-	padding: 5em 0;			
-}
-
-
-	/*=============== LOGIN MEDIA QUERIES ===============*/
-
-
+	/*=============== MEDIA QUERIES LOG IN ===============*/
 
 @media (min-width: 768px){
 
-	#login-wrapper{
-		display: grid;
-		grid-template-columns: 3fr;
-		grid-template-rows: repeat(4, auto);
-		grid-template-areas: 
-		"vnav vnav vnav"
-		"news news news" 
-		"login divider signup" 
-		"footer footer footer";
+	#divider-border{
+		border-right: .1em solid #A3ADF5;
+		border-bottom: none;
 	}
 
-	#divider{
-		border-left: solid .2em #8093F1;
-		height: 100vh;
-		margin: 3em 0;
-
+	h2{
+		font-size: 2em;
 	}
 
-	#login, #signup{
-		width: 50vw;
-	}
-
-	#newsletter{
-		display: flex;
-		flex-flow: wrap row;
-		align-content: center;
-	    align-items: center;
-	    justify-content: center;
-	}
-		#newsletter h2, #neswletter form{
-			width: 50vw;
-		}
-
-}
-
-	/*=============== MEDIA QUERIES ===============*/
+}	
