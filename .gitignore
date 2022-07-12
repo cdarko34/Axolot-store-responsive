@@ -1,3 +1,4 @@
 *.ai
 *.psd
 *.zip
+node_modules/
